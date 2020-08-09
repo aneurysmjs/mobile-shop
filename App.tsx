@@ -1,15 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-
+import { StyleSheet, View } from 'react-native';
 import Home from './src/pages/Home';
-
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Home />
-    </View>
-  );
-}
 
 const styles = StyleSheet.create({
   container: {
@@ -17,3 +8,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffff',
   },
 });
+
+export default function App(): React.ReactElement {
+  return (
+    <View style={styles.container}>
+      <Home />
+    </View>
+  );
+}
