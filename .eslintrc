@@ -27,6 +27,10 @@
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "import/resolver": {
+      // this fixes `import/no-unresolved` when using with typescript "baseUrl" and "paths" options.
+      "typescript": {} // this loads <rootdir>/tsconfig.json to eslint
     }
   },
   "parserOptions":  {
