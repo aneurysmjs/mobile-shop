@@ -11,6 +11,8 @@ module.exports = function babelConfig(api) {
           extensions: ['.ios.js', '.android.js', '.js', '.ts', '.tsx', '.json'],
           alias: {
             '@components': './src/components',
+            '@styles': './src/styles',
+            '@pages': './src/pages',
           },
         },
       ],
