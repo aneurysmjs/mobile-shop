@@ -10,7 +10,7 @@ interface Props {
 export default function CategoryItem({ children }: Props): React.ReactElement {
   return (
     <View style={styles.categoryItem}>
-      <Text>{children}</Text>
+      <Text style={styles.categoryItemText}>{children}</Text>
     </View>
   );
 }
